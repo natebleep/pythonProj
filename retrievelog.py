@@ -15,6 +15,7 @@ if result == False:
     local_file, headers = urlretrieve(URL_PATH, LOCAL_FILE)
 
 fh = open(LOCAL_FILE)    
+
 # read the last line of the file
 lineList = fh.readlines()
 fh.close()
@@ -24,23 +25,16 @@ lastDate = lastDate[3]
 lastDate = lastDate[1:]
 lastDate = lastDate.split(':')
 lastDate = lastDate[0]
-# print('Most recent: \n' + lastDate + '\n')
 
 today = lastDate.split('/')
-# print(today)
+
 
 month = today[1]
 datetime_object = datetime.datetime.strptime(month, "%b")
 monthNum = datetime_object.month
-# print(monthNum)
+
 
 todayDate = datetime.date(int(today[2]),int(monthNum),int(today[0]))
-# print(todayDate, '\n')
-
-# yearAgo = 
-
-#figure out what a 365 days ago is
-
 
 
 fh = open(LOCAL_FILE)
@@ -61,13 +55,11 @@ for line in fh:
     
 
     logDate = datetime.date(int(now[2]),int(monthNum),int(now[0]))
-    # print(logDate)
-
+ 
     requests += 1
     
     dif = todayDate - logDate
-    # print(dif)
-
+    
     if dif.days <= 365:
         req_year += 1
         
