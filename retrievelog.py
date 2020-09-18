@@ -11,7 +11,11 @@ def main():
     if result == False:
         local_file, headers = urlretrieve(URL_PATH, LOCAL_FILE)
     
-    
+    fh = open(LOCAL_FILE)
+    for line in fh:
+        element = line.split(' ')
+        m = element[3]
+        print(m[1:])
 
 
 
