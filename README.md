@@ -4,7 +4,7 @@ This is the repo for my TCMG 412 Lab 3.
 
 Not very keen on python what so ever but here we go..
 
-###Promt
+### Promt
 Below is the promt for the lab straight from Canvas.
 -------------
 The goal of this project is to familiarize yourself with Python syntax, and some basic tasks that are common in systems programming and administration. The program will be invoked from the command line on a fresh Linux machine, so if you introduce any library dependencies beyond the Python Standard Library (not recommended), you must provide very clear instructions to recreate your environment. I would suggest using Vagrant (Links to an external site.) or a GCP (Links to an external site.) VM to develop in Linux if you are on a Windows machine. Another option is to install the Windows Subsystem for Linux (Links to an external site.) and setup a Python environment (Links to an external site.). It is your responsibility to ensure the program runs as expected in the operational environment described.
