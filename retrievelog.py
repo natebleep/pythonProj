@@ -15,7 +15,10 @@ def main():
     for line in fh:
         element = line.split(' ')
         m = element[3]
-        print(m[1:])
+        m = m[1:]
+        m = m.split(':')
+        m = m[0]
+        print(m)
 
 
 
